@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="별 명 바 꾸 기 :"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/newNick_edit"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:hint="" />
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="중 복 확 인"
+                android:id="@+id/repeatButton_btn" />
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메 인 화 면 으 로"
+            android:id="@+id/goToMain_btn"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

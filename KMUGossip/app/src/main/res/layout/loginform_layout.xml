@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Hello! \nKMU_Gossip!"
+        android:textSize="50dp"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginUserId_edit"
+        android:hint="E-MAIL"
+        android:textColorHint="#ffffff"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginUserPwd_edit"
+        android:hint="PASSWORD"
+        android:textColorHint="#ffffff"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_btn"
+        android:background="@drawable/loginbtn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUp_text"
+        android:text="Create and account"
+        android:textColor="#ffffff"
+        android:textSize="20dp"/>
+
+</LinearLayout>

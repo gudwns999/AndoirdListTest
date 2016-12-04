@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hyung_jun.kmugossip" >
+<!--인터넷 허가 요청-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+<!--첫 화면 시작은 Splash로 한다. -->
+        <activity
+            android:name=".Splash"            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />            </intent-filter>        </activity>
+        <activity android:name=".MainView"></activity>
+        <!--EditText의 기본상태를 Hidden으로 해야 어색하지 않음: android:windowSoftInputMode="stateAlwaysHidden"-->
+        <activity android:name=".LoginForm"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".SignUpForm"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".AList"></activity>
+        <activity android:name=".BList"></activity>
+        <activity android:name=".CList"></activity>
+        <activity android:name=".DList"></activity>
+        <activity android:name=".SearchAndWrite"></activity>
+        <activity android:name=".Reply"></activity>
+        <activity android:name=".WebPlus"></activity>
+        <activity android:name=".NickNameChange"></activity>
+        <activity android:name=".SlideMenu"></activity>
+    </application>
+
+</manifest>

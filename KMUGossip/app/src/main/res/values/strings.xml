@@ -1,0 +1,12 @@
+  <resources>
+    <string name="app_name">KMUGossip</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <color name="lime">#00ff00</color>
+    <color name="yellow">#ffff00</color>
+    <color name="coral">#ff7f50</color>
+    <color name="plum">#DDA0DD</color>
+    <color name="gainsboro">#DCDCDC</color>
+
+</resources>

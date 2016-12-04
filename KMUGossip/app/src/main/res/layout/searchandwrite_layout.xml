@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/textState_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연애"
+            android:layout_weight="1"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="교류"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학업/취업"
+            android:layout_weight="1"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/writeSomething_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="뭐라도 쳐봐유"/>
+    <Button
+        android:id="@+id/sendPost_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="와따라따시따라리"/>
+</LinearLayout>

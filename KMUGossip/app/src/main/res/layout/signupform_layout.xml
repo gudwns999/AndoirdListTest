@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/singupbackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:textSize="60dp"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUserId_edit"
+        android:hint="E-MAIL 입력"
+        android:textColorHint="#ffffff"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUserPwd_edit"
+        android:hint="PASSWORD 입력"
+        android:textColorHint="#ffffff"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userNick_edit"
+        android:hint="NICKNAME 입력"
+        android:textColorHint="#ffffff"/>
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userMajor_auto"
+        android:hint="Major 입력"
+        android:textColorHint="#ffffff"/>
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneVerify_btn"
+        android:hint="인증번호 입력"
+        android:textColorHint="#ffffff"/>
+
+    <!--성별 입력-->
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userGender_radioGroup"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/man_radio"
+            android:checked="false"
+            android:text="Man"
+            android:layout_weight="1"
+            android:textColor="#ffffff"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/woman_radio"
+            android:text="WOMAN"
+            android:layout_weight="1"
+            android:textColor="#ffffff"/>
+    </RadioGroup>
+    <!-- 학부생/대학원생/졸업생/타대생 여부-->
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userState_radioGroup"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/undergraduate_radio"
+            android:checked="false"
+            android:text="학부생"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/postgraduate_radio"
+            android:text="대학원생"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/graduate_radio"
+            android:text="졸업생"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/another_radio"
+            android:text="타대생"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendVerifyNumber_btn"
+        android:background="@drawable/sendverifynumber_btn"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finishVerifyNumber_btn"
+        android:background="@drawable/finishverifynumber_btn"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUp_btn"
+        android:background="@drawable/signupbutton"/>
+</LinearLayout>
